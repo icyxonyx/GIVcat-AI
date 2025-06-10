@@ -1,0 +1,38 @@
+# PyTorch (CUDA 11.8)
+torch==2.1.0+cu118
+torchvision==0.16.0+cu118
+torchaudio==2.1.0+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Core libraries
+tqdm>=4.66.0
+pillow>=10.0.0
+moviepy==1.0.3
+imageio>=2.31.0
+opencv-python>=4.8.0
+numpy>=1.24.0,<1.27.0  # Stable version for transformers
+
+# Transformers stack 
+transformers==4.48.0
+tokenizers==0.21.1
+sentencepiece>=0.1.99
+huggingface-hub==0.24.0
+safetensors>=0.4.0
+
+# Accelerate for memory optimization
+accelerate==0.24.0
+
+# Additional optimizations
+psutil>=5.9.0  # Memory monitoring
+regex>=2023.10.0
+ftfy>=6.1.0
+wheel>=0.41.0
+
+# Optional dependencies for enhanced features
+# Uncomment if you want OCR support (increases memory usage)
+# pytesseract>=0.3.10
+easyocr
+emoji==0.6.0
+
+# Memory profiling (development only)
+memory-profiler>=0.61.0
