@@ -325,7 +325,7 @@ def analyze_gif(gif_path):
             print("📸 Static GIF detected, routing to image analyzer")
             return analyze_image_file(gif_path)
 
-        # ─── NEW “CARTOON” OVERRIDE ────────────────────────────────────────────────
+        # ─── “CARTOON” OVERRIDE ────────────────────────────────────────────────
         # Load just the first frame via PIL, generate BLIP caption,
         # and if that caption mentions “cartoon” or “animation,” treat as ["memes"],
         # but only if BLIP models successfully loaded.
